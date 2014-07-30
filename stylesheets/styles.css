@@ -135,6 +135,34 @@ input[type="submit"] {
   vertical-align: middle;
   white-space: nowrap; }
 
+body {
+  margin: 0;
+  padding: 0; }
+
+.top {
+  height: 4.2358em;
+  padding: 0.5em; }
+
+header {
+  background-color: #54524F;
+  color: white;
+  padding: 0.5em; }
+  header h2 {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 48.82117%; }
+    header h2:last-child {
+      margin-right: 0; }
+  header .blurb {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 48.82117%;
+    text-align: right; }
+    header .blurb:last-child {
+      margin-right: 0; }
+
 .container {
   max-width: 68em;
   margin-left: auto;
@@ -143,13 +171,14 @@ input[type="submit"] {
     content: "";
     display: table;
     clear: both; }
+  .container article {
+    margin: 2em 0; }
   .container .snack {
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 23.23176%;
-    margin: 0;
-    border: 1px solid #ededed; }
+    border: 1px solid #fafafa; }
     .container .snack:last-child {
       margin-right: 0; }
     .container .snack .food {
@@ -173,8 +202,8 @@ input[type="submit"] {
         font-weight: 700;
         font-size: 1.2em; }
     .container .snack .calories {
-      background-color: white;
-      height: 4.2358em;
+      background-color: #444444;
+      height: 2.96506em;
       color: #94c04b;
       padding: 0.5em;
       text-align: center; }
@@ -196,7 +225,7 @@ input[type="submit"] {
       font-size: 1.5em !important;
       outline: none; }
   .container .amount {
-    margin-top: 2em; }
+    margin: 2em 0; }
   .container .food {
     font-family: "Pontano Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
     font-size: 1em; }

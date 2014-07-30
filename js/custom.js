@@ -51,7 +51,6 @@ $(document).ready(function() {
         });
     });
 
-    $(".amount").prepend("Amount Left:");
     $(".calories").append("calories");
 
 });
