@@ -1,0 +1,56 @@
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700|Pontano+Sans);
+
+@import "bourbon/bourbon";
+@import "neat/neat";
+@import "base/base";
+
+.container {
+  @include outer-container;
+
+  .snack {
+    @include span-columns(3);
+    margin: 0;
+    border: 1px solid #ededed;
+
+    @each $section, $height, $bgcolor, $color in (food, 0.7, $green, #222),
+                              (amount, 3, white, #222),
+                              (calories, 1, white, $green),
+                              (about, 2, #222, white) {
+      .#{$section} {
+        background-color: $bgcolor;
+        height: $column * $height;
+        color: $color;
+        padding: 0.5em;
+        text-align: center;
+
+        a {
+          color: #222;
+          font-weight: 700;
+          font-size: 1.2em;
+        }
+      }
+    }
+
+    .amount input[type=text] {
+      font-size: 1.5em !important;
+      outline: none;
+    }
+  }
+
+  .amount {
+    margin-top: 2em;
+  }
+
+  .food {
+    font-family: $header-font-family;
+    font-size: 1em;
+  }
+
+  .calories {
+    font-size: 1.2em;
+  }
+
+  .about {
+    font-size: 0.8em;
+  }
+}

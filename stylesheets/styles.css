@@ -1,0 +1,206 @@
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700|Pontano+Sans);
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+button,
+input[type="submit"] {
+  -webkit-font-smoothing: antialiased;
+  background-color: #94c04b;
+  border-radius: 0.1875em;
+  color: white;
+  display: inline-block;
+  font-size: 1em;
+  font-weight: bold;
+  line-height: 1;
+  padding: .75em 1em;
+  text-decoration: none; }
+  button:hover,
+  input[type="submit"]:hover {
+    background-color: #6b8d31;
+    color: white; }
+
+body {
+  -webkit-font-smoothing: antialiased;
+  background-color: white;
+  color: #333433;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-size: 1em;
+  line-height: 1.5; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Pontano Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  line-height: 1.25em;
+  margin: 0;
+  text-rendering: optimizeLegibility; }
+
+h1 {
+  font-size: 2.25em; }
+
+h2 {
+  font-size: 2em; }
+
+h3 {
+  font-size: 1.75em; }
+
+h4 {
+  font-size: 1.5em; }
+
+h5 {
+  font-size: 1.25em; }
+
+h6 {
+  font-size: 1em; }
+
+p {
+  margin: 0 0 0.75em; }
+
+a {
+  -webkit-transition: color 0.1s linear;
+  -moz-transition: color 0.1s linear;
+  transition: color 0.1s linear;
+  color: #94c04b;
+  text-decoration: none; }
+  a:hover {
+    color: #6b8d31; }
+  a:active, a:focus {
+    color: #6b8d31;
+    outline: none; }
+
+hr {
+  border-bottom: 1px solid #dddddd;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  margin: 1.5em 0; }
+
+img {
+  margin: 0;
+  max-width: 100%; }
+
+blockquote {
+  border-left: 2px solid #dddddd;
+  color: #595b59;
+  margin: 1.5em 0;
+  padding-left: 0.75em; }
+
+cite {
+  color: #727472;
+  font-style: italic; }
+  cite:before {
+    content: '\2014 \00A0'; }
+
+table {
+  border-collapse: collapse;
+  margin: 0.75em 0;
+  table-layout: fixed;
+  width: 100%; }
+
+th {
+  border-bottom: 1px solid #b7b7b7;
+  font-weight: bold;
+  padding: 0.75em 0;
+  text-align: left; }
+
+td {
+  border-bottom: 1px solid #dddddd;
+  padding: 0.75em 0; }
+
+tr, td, th {
+  vertical-align: middle; }
+
+ul, ol {
+  margin: 0;
+  padding: 0;
+  list-style-type: none; }
+dl {
+  margin-bottom: 0.75em; }
+  dl dt {
+    font-weight: bold;
+    margin-top: 0.75em; }
+  dl dd {
+    margin: 0; }
+
+button,
+input[type="submit"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  border: none;
+  cursor: pointer;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap; }
+
+.container {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto; }
+  .container:after {
+    content: "";
+    display: table;
+    clear: both; }
+  .container .snack {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 23.23176%;
+    margin: 0;
+    border: 1px solid #ededed; }
+    .container .snack:last-child {
+      margin-right: 0; }
+    .container .snack .food {
+      background-color: #94c04b;
+      height: 2.96506em;
+      color: #222222;
+      padding: 0.5em;
+      text-align: center; }
+      .container .snack .food a {
+        color: #222;
+        font-weight: 700;
+        font-size: 1.2em; }
+    .container .snack .amount {
+      background-color: white;
+      height: 12.7074em;
+      color: #222222;
+      padding: 0.5em;
+      text-align: center; }
+      .container .snack .amount a {
+        color: #222;
+        font-weight: 700;
+        font-size: 1.2em; }
+    .container .snack .calories {
+      background-color: white;
+      height: 4.2358em;
+      color: #94c04b;
+      padding: 0.5em;
+      text-align: center; }
+      .container .snack .calories a {
+        color: #222;
+        font-weight: 700;
+        font-size: 1.2em; }
+    .container .snack .about {
+      background-color: #222222;
+      height: 8.4716em;
+      color: white;
+      padding: 0.5em;
+      text-align: center; }
+      .container .snack .about a {
+        color: #222;
+        font-weight: 700;
+        font-size: 1.2em; }
+    .container .snack .amount input[type=text] {
+      font-size: 1.5em !important;
+      outline: none; }
+  .container .amount {
+    margin-top: 2em; }
+  .container .food {
+    font-family: "Pontano Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+    font-size: 1em; }
+  .container .calories {
+    font-size: 1.2em; }
+  .container .about {
+    font-size: 0.8em; }
