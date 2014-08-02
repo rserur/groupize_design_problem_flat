@@ -1,5 +1,17 @@
 $(document).ready(function() {
 
+    $(".owl-carousel").owlCarousel({
+        navigation: true, // Show next and prev buttons
+        items: 4,
+        lazyLoad: true,
+        itemsDesktop: [1199, 4],
+        itemsDesktopSmall: [980, 3],
+        itemsTablet: [768, 2],
+        itemsTabletSmall: false,
+        itemsMobile: [479, 1],
+
+    });
+
     // "jQuery Knob" options
     $(function() {
         $(".dial").knob({
@@ -10,15 +22,11 @@ $(document).ready(function() {
                 // "tron" case
                 if (this.$.data('skin') == 'tron') {
 
-                    var a = this.angle(this.cv) // Angle
-                        ,
-                        sa = this.startAngle // Previous start angle
-                        ,
-                        sat = this.startAngle // Start angle
-                        ,
-                        ea // Previous end angle
-                        , eat = sat + a // End angle
-                        ,
+                    var a = this.angle(this.cv), // Angle
+                        sa = this.startAngle, // Previous start angle
+                        sat = this.startAngle, // Start angle
+                        ea, // Previous end angle
+                        eat = sat + a, // End angle
                         r = true;
 
                     this.g.lineWidth = this.lineWidth;

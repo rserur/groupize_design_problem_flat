@@ -137,31 +137,52 @@ input[type="submit"] {
 
 body {
   margin: 0;
-  padding: 0; }
-
-.top {
-  height: 4.2358em;
-  padding: 0.5em; }
+  padding: 0;
+  background-color: #333; }
 
 header {
-  background-color: #54524F;
-  color: white;
-  padding: 0.5em; }
-  header h2 {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 48.82117%; }
-    header h2:last-child {
-      margin-right: 0; }
-  header .blurb {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 48.82117%;
-    text-align: right; }
-    header .blurb:last-child {
-      margin-right: 0; }
+  background-color: white;
+  color: #54524F;
+  padding: 0.5em;
+  border-bottom: 1px solid #ddd; }
+  header .title {
+    width: 100%; }
+    header .title h1 {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 48.82117%;
+      text-transform: uppercase;
+      font-size: 1.6em;
+      font-family: "Montserrat", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; }
+      header .title h1:last-child {
+        margin-right: 0; }
+    header .title h2 {
+      float: right;
+      text-align: right;
+      text-transform: uppercase;
+      font-family: "Montserrat", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+      font-size: 1.6em;
+      font-weight: 400;
+      margin-right: 0.5em; }
+
+button {
+  border-bottom: 3px solid #76993c;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-size: 1.2em;
+  outline: none; }
+  button:hover {
+    background-color: #a9cc6f; }
+  button a {
+    color: white; }
+    button a:hover {
+      color: white;
+      background-color: #a9cc6f; }
+
+article {
+  background-color: white;
+  background-image: url(../img/kitchen.jpg);
+  background-size: cover; }
 
 .container {
   max-width: 68em;
@@ -171,65 +192,72 @@ header {
     content: "";
     display: table;
     clear: both; }
-  .container article {
-    margin: 2em 0; }
-  .container .snack {
+  .container .blurb {
+    display: block;
     float: left;
     display: block;
     margin-right: 2.35765%;
-    width: 23.23176%;
-    border: 1px solid #fafafa; }
-    .container .snack:last-child {
-      margin-right: 0; }
-    .container .snack .food {
-      background-color: #94c04b;
-      height: 2.96506em;
-      color: #222222;
-      padding: 0.5em;
-      text-align: center; }
-      .container .snack .food a {
-        color: #222;
-        font-weight: 700;
-        font-size: 1.2em; }
-    .container .snack .amount {
-      background-color: white;
-      height: 12.7074em;
-      color: #222222;
-      padding: 0.5em;
-      text-align: center; }
-      .container .snack .amount a {
-        color: #222;
-        font-weight: 700;
-        font-size: 1.2em; }
-    .container .snack .calories {
-      background-color: #444444;
-      height: 2.96506em;
-      color: #94c04b;
-      padding: 0.5em;
-      text-align: center; }
-      .container .snack .calories a {
-        color: #222;
-        font-weight: 700;
-        font-size: 1.2em; }
-    .container .snack .about {
-      background-color: #222222;
-      height: 8.4716em;
-      color: white;
-      padding: 0.5em;
-      text-align: center; }
-      .container .snack .about a {
-        color: #222;
-        font-weight: 700;
-        font-size: 1.2em; }
-    .container .snack .amount input[type=text] {
-      font-size: 1.5em !important;
-      outline: none; }
-  .container .amount {
-    margin: 2em 0; }
-  .container .food {
+    width: 100%;
+    text-align: center;
+    padding: 2em 0;
     font-family: "Pontano Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
-    font-size: 1em; }
-  .container .calories {
-    font-size: 1.2em; }
-  .container .about {
-    font-size: 0.8em; }
+    color: white; }
+    .container .blurb:after {
+      content: "";
+      display: table;
+      clear: both; }
+    .container .blurb:last-child {
+      margin-right: 0; }
+    .container .blurb p {
+      font-size: 1.5em; }
+  .container .stock {
+    display: block;
+    padding: 2em 0; }
+    .container .stock:after {
+      content: "";
+      display: table;
+      clear: both; }
+    .container .stock .snack {
+      margin: 0 0.5em;
+      border-radius: 0.1875em;
+      background-color: white;
+      border-bottom: 3px solid #ccc; }
+      .container .stock .snack .food {
+        height: 2.96506em;
+        padding: 0.5em;
+        text-align: center; }
+        .container .stock .snack .food a {
+          font-weight: 700;
+          font-size: 1.2em; }
+      .container .stock .snack .amount {
+        height: 12.7074em;
+        padding: 0.5em;
+        text-align: center; }
+        .container .stock .snack .amount a {
+          font-weight: 700;
+          font-size: 1.2em; }
+      .container .stock .snack .calories {
+        height: 2.96506em;
+        padding: 0.5em;
+        text-align: center; }
+        .container .stock .snack .calories a {
+          font-weight: 700;
+          font-size: 1.2em; }
+      .container .stock .snack .about {
+        height: 8.4716em;
+        padding: 0.5em;
+        text-align: center; }
+        .container .stock .snack .about a {
+          font-weight: 700;
+          font-size: 1.2em; }
+      .container .stock .snack .amount input[type=text] {
+        font-size: 1.5em !important;
+        outline: none; }
+    .container .stock .food {
+      font-family: "Montserrat", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+      font-size: 1em;
+      background-color: #333; }
+    .container .stock .calories {
+      font-size: 1.2em; }
+    .container .stock .about {
+      font-size: 0.8em; }

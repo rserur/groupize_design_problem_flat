@@ -7,78 +7,126 @@
 body {
   margin: 0;
   padding: 0;
-}
-
-.top {
-  height: $column;
-  padding: 0.5em;
+  background-color: #333;
 }
 
 header {
-  background-color: #54524F;
-  color: white;
+  background-color: white;
+  color: #54524F;
   padding: 0.5em;
+  border-bottom: 1px solid #ddd;
 
-  h2 {
-    @include span-columns(6);
+  .title {
+    @include fill-parent();
+
+    h1 {
+      @include span-columns(6);
+      text-transform: uppercase;
+      font-size: 1.6em;
+      font-family: $base-font-family;
+    }
+
+    h2 {
+      float: right;
+      text-align: right;
+      text-transform: uppercase;
+      font-family: $base-font-family;
+      font-size: 1.6em;
+      font-weight: 400;
+      margin-right: 0.5em;
+    }
   }
 
-  .blurb {
-    @include span-columns(6);
-    text-align: right;
-  }
 }
+
+  button {
+    border-bottom: 3px solid shade($green, 20);
+    font-family: $base-font-family;
+    font-size: 1.2em;
+    outline: none;
+
+    &:hover {
+      background-color: tint($green, 20);
+    }
+
+    a {
+      color: white;
+
+      &:hover {
+        color: white;
+        background-color: tint($green, 20);
+      }
+    }
+  }
+
+  article {
+    background-color: white;
+    background-image: url(../img/kitchen.jpg);
+    background-size: cover;
+  }
 
 .container {
   @include outer-container;
 
-  article {
-    margin: 2em 0;
+  .blurb {
+    @include row();
+    @include span-columns(12);
+    text-align: center;
+    padding: 2em 0;
+    font-family: $header-font-family;
+    color: white;
+
+    p {
+      font-size: 1.5em;
+    }
   }
 
-  .snack {
-    @include span-columns(3);
-    border: 1px solid #fafafa;
+  .stock {
+    @include row();
+    padding: 2em 0;
 
-    @each $section, $height, $bgcolor, $color in (food, 0.7, $green, #222),
-                              (amount, 3, white, #222),
-                              (calories, 0.7, #444, $green),
-                              (about, 2, #222, white) {
-      .#{$section} {
-        background-color: $bgcolor;
-        height: $column * $height;
-        color: $color;
-        padding: 0.5em;
-        text-align: center;
+    .snack {
+      margin: 0 0.5em;
+      border-radius: $base-border-radius;
+      background-color: white;
+      border-bottom: 3px solid #ccc;
 
-        a {
-          color: #222;
-          font-weight: 700;
-          font-size: 1.2em;
+      @each $section, $height, $bgcolor, $color in (food, 0.7, #222),
+                                (amount, 3, #222),
+                                (calories, 0.7, $green),
+                                (about, 2, shade($green, 80)) {
+        .#{$section} {
+          height: $column * $height;
+          color: $color;
+          padding: 0.5em;
+          text-align: center;
+
+          a {
+            font-weight: 700;
+            font-size: 1.2em;
+          }
         }
+      }
+
+      .amount input[type=text] {
+        font-size: 1.5em !important;
+        outline: none;
       }
     }
 
-    .amount input[type=text] {
-      font-size: 1.5em !important;
-      outline: none;
+    .food {
+      font-family: $base-font-family;
+      font-size: 1em;
+      background-color: #333;
+
     }
-  }
 
-  .amount {
-    margin: 2em 0;
-  }
+    .calories {
+      font-size: 1.2em;
+    }
 
-  .food {
-    font-family: $header-font-family;
-    font-size: 1em;
-  }
-
-  .calories {
-    font-size: 1.2em;
-  }
-
-  .about {
-    font-size: 0.8em;
+    .about {
+      font-size: 0.8em;
+    }
   }
 }
