@@ -3,19 +3,17 @@ $(document).ready(function() {
     $(".owl-carousel").owlCarousel({
         navigation: true, // Show next and prev buttons
         items: 4,
-        lazyLoad: true,
         itemsDesktop: [1199, 4],
         itemsDesktopSmall: [980, 3],
         itemsTablet: [768, 2],
         itemsTabletSmall: false,
-        itemsMobile: [479, 1],
-
+        itemsMobile: [479, 1]
     });
 
     // "jQuery Knob" options
     $(function() {
         $(".dial").knob({
-            'fgColor': '#94c04b',
+            'fgColor': '#54524F',
             'thickness': '.4',
             draw: function() {
 

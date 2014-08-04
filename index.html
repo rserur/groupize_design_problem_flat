@@ -1,138 +1,136 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>GroupizeDesignerApp</title>
-  <meta content="authenticity_token" name="csrf-param" />
-<meta content="xZDSMBvf7XF5cG0LwE3tljNZaIDJp/GIzrMM8YMqymI=" name="csrf-token" />
-  <link href="stylesheets/styles.css" media="screen" rel="stylesheet"/>
-  <link rel="stylesheet" href="stylesheets/owl.carousel.css">
-<link rel="stylesheet" href="stylesheets/owl.theme.css">
-  <script src="js/jquery-1.11.1.min.js"></script>
-  <script src="js/jquery.knob.js"></script>
-  <script src="js/owl.carousel.min.js"></script>
-  <script src="js/custom.js"></script>
-</head>
-<body>
-
-  <header>
-    <div class="container">
-      <div class="title">
-        <h1>Kitchen Snack Central</h1>
-        <a href="/">
-          <h2 class="logo" data-role="logo">Snack Logo</h2>
-        </a>
+  <head>
+    <title>GroupizeDesignerApp</title>
+    <meta content="authenticity_token" name="csrf-param" />
+    <meta content="xZDSMBvf7XF5cG0LwE3tljNZaIDJp/GIzrMM8YMqymI=" name="csrf-token" />
+    <link href="stylesheets/styles.css" media="screen" rel="stylesheet"/>
+    <link rel="stylesheet" href="stylesheets/owl.carousel.css">
+    <link rel="stylesheet" href="stylesheets/owl.theme.css">
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/jquery.knob.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/custom.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="title">
+          <h1>Kitchen Snack Central</h1>
+          <a href="/">
+            <h2 class="logo" data-role="logo">Snack Logo</h2>
+          </a>
+        </div>
       </div>
-    </div>
-  </header>
-
-  <article>
-
-    <div class="container">
-
-      <div class="blurb">
-        <p>These are the snacks we keep in the company kitchen. Enjoy!</p>
-        <p>Don't see anything you like?</p>
-        <button><a href="/snacks/new">Request a New Snack</a></button>
+    </header>
+    <article>
+      <div class="container">
+        <div class="blurb">
+          <p>These are the snacks we keep in the company kitchen. Enjoy!</p>
+        </div>
+        <div class="stock owl-carousel">
+          <div class="snack">
+            <figure>
+              <div class="food">
+                <a href="/snacks/1/edit">Bananas</a>
+              </div>
+              <div class="amount">
+                <input type="text" class="dial" value="1" data-max="10" data-skin="tron">
+              </div>
+              <div class="calories">
+                100
+              </div>
+              <figcaption class="about">
+                Peel &#x27;em, then eat &#x27;em
+              </figcaption>
+            </figure>
+          </div>
+          <div class="snack">
+            <figure>
+              <div class="food">
+                <a href="/snacks/1/edit">Popcorn</a>
+              </div>
+              <div class="amount">
+                <input type="text" class="dial" value="6" data-max="12" data-skin="tron">
+              </div>
+              <div class="calories">
+                53
+              </div>
+              <figcaption class="about">
+                A variety of corn, having hard kernels that burst to form white, irregularly shaped puffs when heated. Also, the edible popped kernels of this corn.
+              </figcaption>
+            </figure>
+          </div>
+          <div class="snack">
+            <figure>
+              <div class="food">
+                <a href="/snacks/1/edit">Candy Basket of Doom</a>
+              </div>
+              <div class="amount">
+                <input type="text" class="dial" value="2" data-max="3" data-skin="tron">
+              </div>
+              <div class="calories">
+                12
+              </div>
+              <figcaption class="about">
+                A collection of candy, ever-changing.
+              </figcaption>
+            </figure>
+          </div>
+          <div class="snack">
+            <figure>
+              <div class="food">
+                <a href="/snacks/1/edit">Tiger&#x27;s Tears</a>
+              </div>
+              <div class="amount">
+                <input type="text" class="dial" value="3" data-max="10" data-skin="tron">
+              </div>
+              <div class="calories">
+                75
+              </div>
+              <figcaption class="about">
+                A Thai-style salad that&#x27;s awesomely yummy.
+              </figcaption>
+            </figure>
+          </div>
+          <div class="snack">
+            <figure>
+              <div class="food">
+                <a href="/snacks/1/edit">Granola Bars</a>
+              </div>
+              <div class="amount">
+                <input type="text" class="dial" value="1" data-max="18" data-skin="tron">
+              </div>
+              <div class="calories">
+                725
+              </div>
+              <figcaption class="about">
+                The healthiest choice.
+              </figcaption>
+            </figure>
+          </div>
+          <div class="snack">
+            <figure>
+              <div class="food">
+                <a href="/snacks/1/edit">Chili Dog</a>
+              </div>
+              <div class="amount">
+                <input type="text" class="dial" value="4" data-max="5" data-skin="tron">
+              </div>
+              <div class="calories">
+                3000
+              </div>
+              <figcaption class="about">
+                Life is short.
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="blurb">
+         <p>Don't see anything you like?</p>
+          <button><a href="/snacks/new">Request a New Snack</a></button>
+        </div>
       </div>
-
-      <div class="stock owl-carousel">
-
-        <div class="snack">
-          <div class="food">
-            <a href="/snacks/1/edit">Bananas</a>
-          </div>
-          <div class="amount">
-            <input type="text" class="dial" value="1" data-max="10" data-skin="tron">
-          </div>
-          <div class="calories">
-            100
-          </div>
-          <div class="about">
-            Peel &#x27;em, then eat &#x27;em
-          </div>
-        </div>
-
-        <div class="snack">
-          <div class="food">
-            <a href="/snacks/1/edit">Popcorn</a>
-          </div>
-          <div class="amount">
-            <input type="text" class="dial" value="6" data-max="12" data-skin="tron">
-          </div>
-          <div class="calories">
-            53
-          </div>
-          <div class="about">
-            A variety of corn, Zea mays everta, having hard kernels that burst to form white, irregularly shaped puffs when heated. Also, the edible popped kernels of this corn.
-          </div>
-        </div>
-
-        <div class="snack">
-          <div class="food">
-            <a href="/snacks/1/edit">Candy Basket of Doom</a>
-          </div>
-          <div class="amount">
-            <input type="text" class="dial" value="2" data-max="3" data-skin="tron">
-          </div>
-          <div class="calories">
-            12
-          </div>
-          <div class="about">
-            A collection of candy, ever-changing.
-          </div>
-        </div>
-
-        <div class="snack">
-          <div class="food">
-            <a href="/snacks/1/edit">Tiger&#x27;s Tears</a>
-          </div>
-          <div class="amount">
-            <input type="text" class="dial" value="3" data-max="10" data-skin="tron">
-          </div>
-          <div class="calories">
-            75
-          </div>
-          <div class="about">
-            A Thai-style salad that&#x27;s awesomely yummy.
-          </div>
-        </div>
-
-        <div class="snack">
-          <div class="food">
-            <a href="/snacks/1/edit">Granola Bars</a>
-          </div>
-          <div class="amount">
-            <input type="text" class="dial" value="1" data-max="18" data-skin="tron">
-          </div>
-          <div class="calories">
-            725
-          </div>
-          <div class="about">
-            The healthiest choice.
-          </div>
-        </div>
-
-        <div class="snack">
-          <div class="food">
-            <a href="/snacks/1/edit">Chili Dog</a>
-          </div>
-          <div class="amount">
-            <input type="text" class="dial" value="4" data-max="5" data-skin="tron">
-          </div>
-          <div class="calories">
-            3000
-          </div>
-          <div class="about">
-            Life is short.
-          </div>
-        </div>
-
-      </div>
-
-    </div>
-
-  </article>
-
-</body>
+    </article>
+  </body>
 </html>
-

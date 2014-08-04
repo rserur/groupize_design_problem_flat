@@ -20,13 +20,12 @@
 	font-size: 12px;
 
 	background: #94c04b;
-	filter: Alpha(Opacity=50);/*IE7 fix*/
-	opacity: 0.5;
+	opacity: 1;
+	border-bottom: 3px solid shade($green, 20);
 }
 /* Clickable class fix problem with hover on touch devices */
 /* Use it for non-touch hover action */
 .owl-theme .owl-controls.clickable .owl-buttons div:hover{
-	filter: Alpha(Opacity=100);/*IE7 fix*/
 	opacity: 1;
 	text-decoration: none;
 }
@@ -36,7 +35,6 @@
 .owl-theme .owl-controls .owl-page{
 	display: inline-block;
 	zoom: 1;
-	*display: inline;/*IE7 life-saver */
 }
 .owl-theme .owl-controls .owl-page span{
 	display: block;
@@ -44,7 +42,8 @@
 	height: 12px;
 	margin: 5px 7px;
 	filter: Alpha(Opacity=50);/*IE7 fix*/
-	opacity: 0.5;
+	opacity: 1;
+	border-bottom: 3px solid shade($green, 20);
 
 	background: #94c04b;
 }
@@ -69,4 +68,17 @@
 .owl-item.loading{
 	min-height: 150px;
 	background: url(AjaxLoader.gif) no-repeat center center
+}
+
+.owl-prev, .owl-next {
+	border-bottom: 3px solid #76993C;
+	border-radius: 0.1875em;
+	font-size: 1em !important;
+}
+
+.owl-prev {
+	float: left;
+}
+.owl-next {
+	float: right;
 }
