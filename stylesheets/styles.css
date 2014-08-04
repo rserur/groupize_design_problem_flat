@@ -195,7 +195,7 @@ button {
     clear: both; }
   .container .stock {
     display: block;
-    padding: 1em 0; }
+    margin: 1em 0; }
     .container .stock:after {
       content: "";
       display: table;
@@ -295,11 +295,9 @@ button {
   margin-right: 2.35765%;
   width: 100%;
   text-align: center;
-  padding: 1em 0;
+  margin: 1em 0;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
-  margin: 1em;
-  color: white;
-  margin-bottom: 1em; }
+  color: white; }
   .blurb:after {
     content: "";
     display: table;
